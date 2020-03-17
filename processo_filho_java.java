@@ -14,8 +14,8 @@ public class OSProcess{
     InputStreamReader isr = new InputStreamReader(is);
     BufferedReader br = new BufferedReader(isr);
     
-    String line;
-    while( (lin = br.readline()) != null){
+    String line; 
+    while( (line = br.readLine()) != null){
       System.out.println(line);
     }
     br.close();
