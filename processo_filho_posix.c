@@ -9,6 +9,7 @@ int main(){
   //dentro do processo filho, o pid tem valor 0
   //dentro do processo pai, o pid tem o valor do processo filho
   //a fork() retorna um valor negativo, caso tenha ocorrido algum erro.
+  
   if(pid<0){
     printf("erro\n");
     exit(1);
@@ -19,6 +20,6 @@ int main(){
   else{
     printf("Pai: id is %d, pid valor is %d\n", getpid(), pid);
   }
-  printf("pid valor -> %d -->", pid);
-  system("date")
+  printf("Saindo... processo ID: %d", getpid());
+  return 0;
 }
