@@ -6,8 +6,8 @@ int main(){
   PROCESS_INFORMATION pi;
   ZeroMemory(&si, sizeof(si));
   ZeroMemory(&pi, sizeof(pi));
-  si.cd = sizeof(si);
-  
+  si.cb = sizeof(si);
+  int filho;
   filho = CreateProcess(NULL,
                        "C:\\WINDOWS\\system32\\mspaint.exe",
                         NULL,
